@@ -1,16 +1,19 @@
 {
-	"name": "mock-debug",
-	"displayName": "Mock Debug",
-	"version": "0.26.0",
-	"publisher": "andreweinand",
-	"description": "Starter extension for developing debug adapters for VS Code.",
+	"name": "vscode-vide-debug",
+	"displayName": "VIDE Debug",
+	"version": "0.0.0",
+	"description": "VSCode debug adapter for VIDE.",
 	"author": {
-		"name": "Microsoft Corporation",
-		"email": "aweinand@microsoft.com"
+		"name": "Sebastian Reinhard",
+		"email": "sebastian@sebbert.me"
 	},
 	"license": "MIT",
 	"keywords": [
-		"multi-root ready"
+		"vectrex",
+		"vide",
+		"mc6809",
+		"6522via",
+		"debug"
 	],
 	"engines": {
 		"vscode": "^1.18.0",
@@ -23,10 +26,10 @@
 	"private": true,
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-mock-debug.git"
+		"url": "https://github.com/Sebbert/vscode-vide-debug.git"
 	},
 	"bugs": {
-		"url": "https://github.com/Microsoft/vscode-mock-debug/issues"
+		"url": "https://github.com/Sebbert/vscode-vide-debug/issues"
 	},
 	"dependencies": {
 		"vscode-debugprotocol": "1.25.0",

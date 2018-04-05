@@ -1,0 +1,35 @@
+{
+    "name": "m6809",
+    "displayName": "m6809",
+    "description": "Motorola 6809 assembly",
+    "version": "0.0.1",
+    "publisher": "sebbert",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "m6809",
+            "aliases": ["6809 Assembly", "m6809"],
+            "extensions": [".s",".i",".asm"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "m6809",
+            "scopeName": "source.asm.m6809",
+            "path": "./syntaxes/m68k.tmLanguage"
+        }],
+        "debuggers": [{
+            "type": "vide",
+            "label": "Vide debug",
+            
+            "languages": [
+                "m6809"
+            ]
+
+        }]
+    }
+}
