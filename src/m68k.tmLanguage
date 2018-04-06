@@ -57,25 +57,6 @@
 		<dict>
 			<key>captures</key>
 			<dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>variable.other.macro.m6809</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
-					<string>variable.other.macro.m6809</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>(?i)(^([a-zA-Z0-9_\.]+)(:[ 	]*|[ 	]+)macro|^[ 	]+macro[ 	]+([a-zA-Z0-9_\.]+))[ 	]*$</string>
-			<key>name</key>
-			<string>meta.macro.m6809</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
@@ -125,15 +106,21 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)^[ \t]+\b(ADC[AB]|ADD[ABD]|AND[AB]|ASL[AB]?|ASR[AB]?|BIT[AB]|CLR[AB]?|CMP[ABDSUXY]|COM[AB]?|DAA|DEC[AB]?|EOR[AB]|EXG|INC[AB]?|LD[ABD]|LSL[AB]?|LSR[AB]?|MUL|NEG[AB]?|OR[AB]|ROL[AB]?|ROR[AB]?|SBC[AB]|ST[ABDSUXY]|SUB[ABD]|TST[AB]?|TFR|ADDD|SEX|LEA[SUXY]|LD[SUXY]|PSH[SU]|PUL[SU]|ABX|ANDCC|CWAI|NOP|ORCC|JMP|JSR|RTI|RTS|SWI[23]?|SYNC|L?B(CC|CS|EQ|GE|GT|HI|HS|LE|LO|LS|LT|MI|NE|PL|RA|RN|SR|VC|VS))\b</string>
+			<string>(?i)\b(ADC[AB]|ADD[ABD]|AND[AB]|ASL[AB]?|ASR[AB]?|BIT[AB]|CLR[AB]?|CMP[ABDSUXY]|COM[AB]?|DAA|DEC[AB]?|EOR[AB]|EXG|INC[AB]?|LD[ABD]|LSL[AB]?|LSR[AB]?|MUL|NEG[AB]?|OR[AB]|ROL[AB]?|ROR[AB]?|SBC[AB]|ST[ABDSUXY]|SUB[ABD]|TST[AB]?|TFR|ADDD|SEX|LEA[SUXY]|LD[SUXY]|PSH[SU]|PUL[SU]|ABX|ANDCC|CWAI|NOP|ORCC|JMP|JSR|RTI|RTS|SWI[23]?|SYNC|L?B(CC|CS|EQ|GE|GT|HI|HS|LE|LO|LS|LT|MI|NE|PL|RA|RN|SR|VC|VS))\b</string>
 			<key>name</key>
 			<string>keyword.control.meta.cpu.m6809</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)^[ \t]+\b(IF|ELSEIF|ELSE|ENDIF|ENDM|FCB|FCC|FCN|FDB|DB|DW|FILL|RZB|ZMB|BSZ|ORG|PUT|RMB|SECTION|CODE|DATA|BSS|RAM|AUTO|SETDP|EQU|EXPORT|SET|END|INCLUDE|INCLUDEBIN)\b</string>
+			<string>(?i)\b(IF|ELSEIF|ELSE|ENDIF|MACRO|ENDM|FCB|FCC|FCN|FDB|DB|DW|FILL|RZB|ZMB|BSZ|ORG|PUT|RMB|SECTION|CODE|DATA|BSS|RAM|AUTO|SETDP|EQU|EXPORT|SET|END|INCLUDE|INCLUDEBIN)\b</string>
 			<key>name</key>
 			<string>keyword.control.meta.cpu.m6809</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?i)\b[a-z_]\w*\b</string>
+			<key>name</key>
+			<string>variable.other.m6809</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
